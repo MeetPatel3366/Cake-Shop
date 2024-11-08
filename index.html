@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cake Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header class="flex justify-center">
+      <div class="container px-16 py-10 flex justify-between items-center">
+        <div class="brand">
+          <img
+            src="./public/images/logo.jpg"
+            alt="shop logo"
+            class="h-20 w-auto object-contain"
+          />
+        </div>
+        <nav>
+          <ul class="flex justify-between gap-16">
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="products.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            <li>
+              <a href="addToCart.html" id="cartValue">
+                <i class="fa-light fa-cart-shopping"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div
+      class="w-full relative container px-16 py-10 flex justify-between items-center"
+    >
+      <div class="swiper default-carousel swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div
+              class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center"
+            >
+              <img
+                src="./public/images/heroimg1.jpg"
+                alt=""
+                class="object-contain w-full h-90"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center"
+            >
+              <img
+                src="./public/images/heroimg2.jpg"
+                alt=""
+                class="object-contain w-full h-90"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center"
+            >
+              <img
+                src="./public/images/heroimg3.jpg"
+                alt=""
+                class="object-contain w-full h-90"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-8 lg:justify-start justify-center">
+          <button
+            id="slider-button-left"
+            class="swiper-button-prev group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !left-5 hover:bg-indigo-600"
+            data-carousel-prev
+          >
+            <svg
+              class="h-5 w-5 text-indigo-600 group-hover:text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M10.0002 11.9999L6 7.99971L10.0025 3.99719"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button
+            id="slider-button-right"
+            class="swiper-button-next group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !right-5 hover:bg-indigo-600"
+            data-carousel-next
+          >
+            <svg
+              class="h-5 w-5 text-indigo-600 group-hover:text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M5.99984 4.00012L10 8.00029L5.99748 12.0028"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <section class="container px-16 py-10 w-full flex flex-col justify-evenly gap-16 items-center">
+        <div>
+          <h1 class="font-bold text-2xl">Services</h1>
+        </div>
+        <div class="flex justify-between items-center gap-48">
+          <div class="flex flex-col gap-6">
+            <i class="fa-solid fa-truck text-2xl"></i>
+            <p>On Time Delivery</p>
+          </div>
+          <div class="flex flex-col gap-6">
+            <i class="fa-solid fa-cake-candles text-2xl"></i>
+            <p>100% Fresh & Hygienic</p>
+          </div>
+          <div class="flex flex-col gap-6">
+            <img src="./public/images/FSSAI.jpg" alt="" class="w-auto h-7">
+            <p>FSSAI Certified</p>
+          </div>
+          <div class="flex flex-col gap-6">
+            <i class="fa-solid fa-money-check-dollar text-2xl"></i>
+            <p>money back gurantee</p>
+          </div>
+        </div>
+    </section>
+
+    <footer class="container px-16 py-10 w-full flex justify-center items-center">
+      <div class="flex justify-between items-center gap-52">
+        <div>
+          <img
+            src="./public/images/logo.jpg"
+            alt="shop-logo"
+            class="h-20 w-auto object-contain"
+          />
+          <p>Show us some love ❤ & connect with us!</p>
+        </div>
+        <div class="flex flex-col">
+          <h3 class="font-bold">Quick Links</h3>
+          <a href="">Products</a>
+          <a href="">About us</a>
+        </div>
+        <div>
+          <h3 class="font-bold">Contact Us</h3>
+          <a href=""><i class="fa-solid fa-phone"></i>1234567890</a>
+        </div>
+        <div>
+          <p>©copyright by cake shop 2024</p>
+          <p>Design & code by Meet Patel</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
