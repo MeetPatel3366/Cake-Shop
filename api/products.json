@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Exotic Choco Overload",
+    "category": "New Arrivals",
+    "flavours": "Chocolate Mousse",
+    "price": 499.99,
+    "stock": 10,
+    "description": "Exotic Choco Overload",
+    "rating": 5.0,
+    "isVegetarian": true,
+    "image": "../images/1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Exotic Choco Bitehone",
+    "category": "New Arrivals",
+    "flavours": "Truffle",
+    "price": 499.99,
+    "stock": 10,
+    "image": "../images/2.jpg",
+    "description": "Exotic Choco Bitehone",
+    "rating": 4.6,
+    "isVegetarian": true
+  },
+  {
+    "id": 3,
+    "name": "Exotic Dutch Chocolate Heart",
+    "category": "New Arrivals",
+    "flavours": "Dutch Chocolate",
+    "price": 599.99,
+    "stock": 10,
+    "image": "../images/3.jpg",
+    "description": "Exotic Dutch Chocolate Heart Cake",
+    "rating": 4.5,
+    "isVegetarian": true
+  },
+  {
+    "id": 4,
+    "name": "Heart Glaze Tall N Fancy",
+    "category": "New Arrivals",
+    "flavours": "Chocolate Flavour",
+    "price": 775.99,
+    "stock": 10,
+    "image": "../images/4.jpg",
+    "description": "Heart Glaze",
+    "rating": 4.7,
+    "isVegetarian": true
+  },
+  {
+    "id": 5,
+    "name": "Royal Beauty Cake",
+    "category": "New Arrivals",
+    "flavours": "Chocolate Flavour",
+    "price": 549.99,
+    "stock": 10,
+    "image": "../images/5.jpeg",
+    "description": "Royal Beauty Cake",
+    "rating": 4.8,
+    "isVegetarian": true
+  },
+  {
+    "id": 6,
+    "name": "2Tier Dark Chocolate Cake",
+    "category": "New Arrivals",
+    "flavours": "Dark chocolate",
+    "price": 1999.99,
+    "stock": 10,
+    "image": "../images/6.jpg",
+    "description": "Dark Chocolate cake",
+    "rating": 5.0,
+    "isVegetarian": true
+  }
+]

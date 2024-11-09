@@ -144,7 +144,7 @@
 
     <section class="container px-16 py-10 w-full flex flex-col justify-evenly gap-16 items-center">
         <div>
-          <h1 class="font-bold text-2xl">Services</h1>
+          <h1 class="font-bold text-blue-600 text-2xl">Services</h1>
         </div>
         <div class="flex justify-between items-center gap-48">
           <div class="flex flex-col gap-6">
@@ -165,6 +165,59 @@
           </div>
         </div>
     </section>
+
+    <section class="container px-16 py-10 flex flex-col gap-10 justify-between items-center">
+      <div class="">
+        <h2 class="text-2xl text-blue-600 font-bold">Checkout Cake Store</h2>
+      </div>
+
+      <section class="container">
+        <div id="productContainer" class="grid grid-cols-3 gap-7 items-center justify-center"></div>
+      </section>
+    </section>
+
+    <template id="productTemplate">
+      <div class="cards border-2 border-slate-900 rounded-lg border-solid flex items-center justify-center p-5 " id="cardValue" >
+        <article class="information [card] gap-3">
+          <span class="category"></span>
+          <div class="imageContainer">
+            <img class="productImage w-80 h-60" src="" alt=""  />
+          </div>
+          <h2 class="productName text-2xl font-bold"></h2>
+
+          <div >
+            <p class="productRating"></p>
+            <p class="isVegetarian"> </p>
+
+          </div>
+
+          <p class="productDescription"></p>
+
+          <div class="productPriceElement flex gap-5">
+            <p class="productPrice"></p>
+            <p class="productActualPrice line-through"></p>
+          </div>
+
+          <div class="productStockElement flex gap-3">
+            <p class="productProperty">Total Kgs Available:</p>
+            <p class="productStock"></p>
+          </div>
+
+          <div class="productQuantityElement">
+            <p class="productProperty">Quantity(Pieces)</p>
+            <div class="stockElement flex gap-3">
+              <button class="cartIncrement">+</button>
+              <p class="productQuantity">1</p>
+              <button class="cartDecrement">-</button>
+            </div>
+          </div>
+
+          <button class="add-to-cart-button">
+            <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+          </button>
+        </article>
+      </div>
+    </template> 
 
     <footer class="container px-16 py-10 w-full flex justify-center items-center">
       <div class="flex justify-between items-center gap-52">
