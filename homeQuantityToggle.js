@@ -1,9 +1,9 @@
 export const homeQuantityToggle=(event,id,stock)=>{
     const currentCardElement=document.querySelector(`#card${id}`);
-    console.log(currentCardElement);
+    // console.log(currentCardElement);
 
     const productQuantity=currentCardElement.querySelector(".productQuantity");
-    console.log(productQuantity.innerText);
+    // console.log(productQuantity.innerText);
 
     let quantity=parseInt(productQuantity.getAttribute("data-quantity")) || 1;
 
