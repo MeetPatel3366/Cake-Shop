@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <header class="flex justify-center">
+        <div class="container px-16 py-10 flex justify-between items-center">
+          <div class="brand">
+            <img
+              src="./public/images/logo.jpg"
+              alt="shop logo"
+              class="h-20 w-auto object-contain"
+            />
+          </div>
+          <nav>
+            <ul class="flex justify-between gap-16">
+              <li class="nav-item">
+                <a href="/" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="products.html" class="nav-link">Products</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+              <li>
+                <a href="addToCart.html" id="cartValue">
+                  <i class="fa-light fa-cart-shopping"> 0</i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+      <section class="addToCartElement">
+        <div class="container">
+          <section>
+            <div id="productCartContainer"></div>
+          </section>
+  
+          <section class="productCartTotalElem  container ">
+            <div class="productCartTotalElement">
+              <p>Selected Offer Summary</p>
+              <div class="productOrderTotal">
+                <div class="flex">
+                  <p>Sub Total:</p>
+                  <p class="productSubTotal">0</p>
+                </div>
+                <div class="flex">
+                  <p>Tax:</p>
+                  <p class="productTax">₹50</p>
+                </div>
+                <hr />
+                <div>
+                  <p>Final Total:</p>
+                  <p class="productFinalTotal">0</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+  
+      <!-- Template for a product -->
+      <template id="productCartTemplate">
+        <div class="cards" id="cardValue">
+          <article class="information [ card ]">
+            <div>
+              <span class="category"></span>
+            </div>
+            <div class="imageContainer">
+              <img class="productImage" src="" alt="" />
+            </div>
+  
+            <h2 class="productName"></h2>
+  
+            <p class="productPrice"></p>
+  
+            <div class="stockElement">
+              <button class="cartIncrement">+</button>
+              <p class="productQuantity" data-quantity="1">1</p>
+              <button class="cartDecrement">-</button>
+            </div>
+  
+            <!-- <button class="add-to-cart-button">Add To Cart</button> -->
+            <button class="add-to-cart-button remove-to-cart-button">
+              Remove
+            </button>
+          </article>
+        </div>
+      </template>
+
+      <footer class="container px-16 py-10 w-full flex justify-center items-center relative">
+        <div class="flex justify-between items-center gap-52 bottom-0">
+          <div>
+            <img
+              src="./public/images/logo.jpg"
+              alt="shop-logo"
+              class="h-20 w-auto object-contain"
+            />
+            <p>Show us some love ❤ & connect with us!</p>
+          </div>
+          <div class="flex flex-col">
+            <h3 class="font-bold">Quick Links</h3>
+            <a href="">Products</a>
+            <a href="">About us</a>
+          </div>
+          <div>
+            <h3 class="font-bold">Contact Us</h3>
+            <a href=""><i class="fa-solid fa-phone"></i>1234567890</a>
+          </div>
+          <div>
+            <p>©copyright by cake shop 2024</p>
+            <p>Design & code by Meet Patel</p>
+          </div>
+        </div>
+      </footer>
+
+      <script type="module" src="showAdToCartCards.js"></script>
+</body>
+</html>

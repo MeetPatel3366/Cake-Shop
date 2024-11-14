@@ -1,8 +1,11 @@
 import { getCartProductFromLS } from "./getCartProductFromLS";
 import { updateCartValue } from "./updateCartValue";
 
+//get cart data from localStorage
 getCartProductFromLS();
 
+
+//add tdata ino localStorage
 export const addToCart = (event, id, stock) => {
   let arrLocalStorageProduct = getCartProductFromLS();
   const currentProdElem = document.querySelector(`#card${id}`);
