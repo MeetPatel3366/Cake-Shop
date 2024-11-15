@@ -51,11 +51,11 @@
       <section class="addToCartElement">
         <div class="container">
           <section>
-            <div id="productCartContainer"></div>
+            <div id="productCartContainer" class="flex flex-col gap-6 border border-black-700 m-10 p-3"></div>
           </section>
   
-          <section class="productCartTotalElem  container ">
-            <div class="productCartTotalElement">
+          <section class="productCartTotalElem  container flex justify-center items-center">
+            <div class="productCartTotalElement border border-blue-600  p-5 ">
               <p>Selected Offer Summary</p>
               <div class="productOrderTotal">
                 <div class="flex">
@@ -67,7 +67,7 @@
                   <p class="productTax">₹50</p>
                 </div>
                 <hr />
-                <div>
+                <div class="flex">
                   <p>Final Total:</p>
                   <p class="productFinalTotal">0</p>
                 </div>
@@ -79,27 +79,27 @@
   
       <!-- Template for a product -->
       <template id="productCartTemplate">
-        <div class="cards" id="cardValue">
-          <article class="information [ card ]">
+        <div class="cards flex " id="cardValue">
+          <article class="information [ card ] flex justify-evenly items-center w-full border border-blue-400 rounded-md p-3">
             <div>
               <span class="category"></span>
             </div>
             <div class="imageContainer">
-              <img class="productImage" src="" alt="" />
+              <img class="productImage w-36 h-36" src="" alt="" />
             </div>
   
             <h2 class="productName"></h2>
   
             <p class="productPrice"></p>
   
-            <div class="stockElement">
+            <div class="stockElement flex gap-5 border border-green-400 p-2 rounded-md">
               <button class="cartIncrement">+</button>
               <p class="productQuantity" data-quantity="1">1</p>
               <button class="cartDecrement">-</button>
             </div>
   
             <!-- <button class="add-to-cart-button">Add To Cart</button> -->
-            <button class="add-to-cart-button remove-to-cart-button">
+            <button class="add-to-cart-button remove-to-cart-button p-3 border rounded-md bg-red-600 text-white font-bold">
               Remove
             </button>
           </article>
@@ -132,6 +132,6 @@
         </div>
       </footer>
 
-      <script type="module" src="showAdToCartCards.js"></script>
+      <script type="module" src="showAddToCartCards.js"></script>
 </body>
 </html>
