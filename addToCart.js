@@ -1,4 +1,5 @@
 import { getCartProductFromLS } from "./getCartProductFromLS";
+import { showToast } from "./showToast";
 import { updateCartValue } from "./updateCartValue";
 
 //get cart data from localStorage
@@ -53,4 +54,7 @@ export const addToCart = (event, id, stock) => {
 
   //update the cart button value
   updateCartValue(arrLocalStorageProduct)
+
+  //show toast when product added to the 
+  showToast("add",id)
 };
